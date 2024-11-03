@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📋 Hourly Activity Tracker</h1>
+        <p class="description">Track your activities easily and stay organized!</p>
+        <form id="activity-form">
+            <div class="form-group">
+                <label for="activity-input">Activity</label>
+                <input type="text" id="activity-input" placeholder="E.g., Reading, Coding..." required>
+            </div>
+            <div class="form-group">
+                <label for="time-input">Select Time</label>
+                <input type="datetime-local" id="time-input" required>
+            </div>
+            <button type="submit" class="btn">Log Activity</button>
+        </form>
+        <h2>Activity Log</h2>
+        <ul id="activity-log"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
